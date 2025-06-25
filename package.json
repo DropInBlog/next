@@ -1,0 +1,40 @@
+{
+  "name": "@dropinblog/nextjs",
+  "version": "1.0.0",
+  "description": "DropInBlog integration component for Next.js projects.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DropInBlog/next"
+  },
+  "keywords": [
+    "dropinblog",
+    "react",
+    "nextjs",
+    "component",
+    "blog"
+  ],
+  "license": "ISC",
+  "author": "Mohamed Nidal Touhami",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsup",
+    "bump:patch": "npm version patch",
+    "bump:minor": "npm version minor",
+    "bump:major": "npm version major"
+  },
+  "peerDependencies": {
+    "next": "^13.0.0 || ^14.0.0 || ^15.0.0",
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.23",
+    "tsup": "^7.2.0",
+    "typescript": "^5.8.3"
+  }
+}
