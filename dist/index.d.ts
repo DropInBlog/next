@@ -20,4 +20,4 @@ type DibBlogOptions = {
  */
 declare function DibBlock(props: DibBlogOptions): react_jsx_runtime.JSX.Element;
 
-export { type DibBlogOptions, DibBlock as default };
+export { DibBlogOptions, DibBlock as default };
