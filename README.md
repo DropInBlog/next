@@ -25,12 +25,9 @@ import DibBlock from '@dropinblog/nextjs';
 ```tsx
 export default function BlogPage() {
   return (
-	<div>
-	  <DibBlock
-		blogUrl="/blog"
-		blogId="your-dropinblog-id"
-	  />
-	</div>
+    <div>
+      <DibBlock blogUrl="/blog" blogId="your-dropinblog-id" />
+    </div>
   );
 }
 ```
@@ -39,7 +36,8 @@ export default function BlogPage() {
 
 ### DibBlock Props
 
-| Prop | Type | Required | Description |
-|------|------|----------|-------------|
-| `blogUrl` | `string` | ✅ | The base URL path where your blog is mounted (e.g., `/blog`) |
-| `blogId` | `string` | ✅ | Your DropInBlog ID from your DropInBlog dashboard |
+| Prop       | Type     | Required | Description                                                  |
+| ---------- | -------- | -------- | ------------------------------------------------------------ |
+| `blogUrl`  | `string` | ✅       | The base URL path where your blog is mounted (e.g., `/blog`) |
+| `blogId`   | `string` | ✅       | Your DropInBlog ID from your DropInBlog dashboard            |
+| `fallback` | `JSX`    | ❌       | Fallback component                                           |

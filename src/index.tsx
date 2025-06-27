@@ -70,7 +70,11 @@ function normalizeDivLinks() {
   const links = document.querySelectorAll(linksSelector.join(', '));
 
   links.forEach((link) => {
-    if (link instanceof HTMLDivElement) {
+    if (
+      link instanceof HTMLDivElement &&
+      link.hasAttribute('onclick') &&
+      !link.hasAttribute('data-href')
+    ) {
       // Extract href value from onclick="location.href='...'" and store in data-href
       let onclick = link.getAttribute('onclick') ?? '';
       onclick = onclick.replace(/location\.href\s*=\s*['"]/, '');
