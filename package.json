@@ -1,6 +1,6 @@
 {
   "name": "@dropinblog/nextjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "DropInBlog integration component for Next.js projects.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
